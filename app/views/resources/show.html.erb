@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @resource.url %>
+</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Content</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @webcontents.each do |webcontent| %>
+      <tr>
+        <td><%= webcontent.tag_type %></td>
+		<td><%= webcontent.content %></td>      
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>
