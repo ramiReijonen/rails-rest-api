@@ -2,7 +2,7 @@ This is the simple Rails application for REST api.
 
 
 1) Receive a url.
-Parse the page content of the url, extract the contents of <<h1>>, <<h2>>, <<h3>>, <<a>> tag and store them to database.
+Parse the page content of the url, extract the contents of h1, h2, h3, a tag and store them to database.
 
 example curl for test.
 
